@@ -36,7 +36,7 @@ def sign_up(body:Sign_In_Schema,session:Sqlite_Session):
         value = token,
         httponly=True,
         secure=True,
-        samesite="lax",
+        samesite="none",
         max_age=60*30,
         path="/"
     )
@@ -67,7 +67,7 @@ def sign_in(body:Sign_In_Schema,session:Sqlite_Session,response:Response):
         value = token,
         httponly=True,
         secure=True,
-        samesite="lax",
+        samesite="none",
         max_age=60*30,
         path="/"
 
