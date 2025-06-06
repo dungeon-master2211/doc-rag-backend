@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: docrag-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: JWT_ALGORITHM
+        value: ${JWT_ALGORITHM}
+      - key : JWT_SECRET
+        value: ${JWT_SECRET}
+      - key: OPENAI_API_KEY
+        value: ${OPENAI_API_KEY}
+      - key : QDRANT_API_KEY
+        value: ${QDRANT_API_KEY}
+      - key : QDRANT_URL
+        value: ${QDRANT_URL}
+    plan: free
