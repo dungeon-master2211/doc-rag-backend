@@ -16,3 +16,4 @@ services:
       - key : QDRANT_URL
         value: ${QDRANT_URL}
     plan: free
+    autoDeploy: true
