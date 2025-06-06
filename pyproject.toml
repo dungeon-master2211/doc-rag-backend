@@ -1,0 +1,21 @@
+[project]
+name = "doc-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "bcrypt>=4.3.0",
+    "fastapi[standard]>=0.115.12",
+    "langchain-community>=0.3.24",
+    "langchain-openai>=0.3.19",
+    "langchain-qdrant>=0.2.0",
+    "langchain-text-splitters>=0.3.8",
+    "openai>=1.84.0",
+    "pyjwt>=2.10.1",
+    "pypdf>=5.6.0",
+    "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.20",
+    "sqlmodel>=0.0.24",
+]
