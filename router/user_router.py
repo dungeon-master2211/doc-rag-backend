@@ -35,7 +35,7 @@ def sign_up(body:Sign_In_Schema,session:Sqlite_Session):
         key = "doc-rag",
         value = token,
         httponly=True,
-        secure=False,
+        secure=True,
         samesite="lax",
         max_age=60*30,
         path="/"
@@ -66,7 +66,7 @@ def sign_in(body:Sign_In_Schema,session:Sqlite_Session,response:Response):
         key = "doc-rag",
         value = token,
         httponly=True,
-        secure=False,
+        secure=True,
         samesite="lax",
         max_age=60*30,
         path="/"
