@@ -23,7 +23,7 @@ async def lifespan(app:FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 origins = [
-    "https://doc-rag-frontend.vercel.app/",
+    "https://doc-rag-frontend.vercel.app",
     "http://localhost",
     "http://localhost:5173",
 ]
